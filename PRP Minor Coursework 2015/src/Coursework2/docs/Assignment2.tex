@@ -1,0 +1,71 @@
+%&pdflatex 
+\documentclass[11pt]{article}
+
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}%
+
+\title{Programming Practice (PRP), Coursework Exercise 2 (14\%, 20 marks)}
+%\author{Martin Chapman (martin.chapman@kcl.ac.uk)}
+\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\textbf{Please read the document marked `Continuous Assessment Guidelines' carefully, before attempting any piece of coursework.}
+
+\emph{This assignment counts for 14\% of your mark for PRP continuous assessment, and is the second of four.}
+
+\emph{The release week for this assignment starts 10th October, at 23:55, and ends 17th October, at 23:55. All submissions must occur before the end of the release week.}
+
+\emph{If you have any questions about the structure of this assessment, please email \\ martin.chapman@kcl.ac.uk.}
+
+For this week's assessment, consider the following scenario, and then complete the tasks that follow it:
+
+\emph{Two superheroes, \_HeroOne\_ and \_HeroTwo\_, disagree over the Superhuman Registration Act. Therefore, Civil War breaks out and the pair of them fight. Based upon their individual strength, we need to determine who will win this fight.}
+
+\begin{enumerate}
+	
+\item Model this scenario based upon the following requirements:
+
+\begin{enumerate}
+
+	\item Create a class to represent a \texttt{Superhero}. Every \texttt{Superhero} has a \texttt{name}. Every \texttt{Superhero} can also have a \texttt{strength}, but this should be optional. If a \texttt{Superhero} does not have a \texttt{strength}, their default \texttt{strength} should be 10. (5 marks)
+	
+	\item Every \texttt{Superhero} can receive a \texttt{powerUp}, whereby their strength is \emph{increased} by a specified amount. (3 marks)
+	
+	\item Every \texttt{Superhero} has the ability to \texttt{fight} another \texttt{Superhero}. The result of this \texttt{fight} is the winning \texttt{Superhero}. The winner of a fight is determined by which hero has the highest \texttt{strength}. If two heroes have the same \texttt{strength}, then the opponent wins. (It might be helpful to know that the keyword \texttt{this} returns a copy of the current object.) (4 marks)
+	
+	\item When a \texttt{Superhero} is printed, their name appears on the terminal. (2 marks)
+
+\end{enumerate}
+
+The best solutions will \emph{not} provide \emph{any} way of retrieving a \texttt{Superhero}'s \texttt{strength} from outside the \texttt{Superhero} class.
+
+\item Create a class called \texttt{Fight}, which can be compiled and run from the command line. Use this class to do the following (in order):
+
+\begin{enumerate}
+
+	\item Create a \texttt{Superhero} named \_HeroOne\_. (1 mark)
+	
+	\item Create a \texttt{Superhero} named \_HeroTwo\_. \_HeroTwo\_ has a strength of \_Strength\_. (1 mark)
+	
+	\item Make \_HeroOne\_ \texttt{fight} \_HeroTwo\_. Print the winner to the terminal. (2 marks)
+	
+	\item Give \_HeroOne\_ a \texttt{powerUp} of 100. (1 mark)
+	
+	\item Make \_HeroOne\_ \texttt{fight} \_HeroTwo\_, again. Print the winner to the terminal.
+
+\end{enumerate}
+
+\end{enumerate}
+
+Clearly comment your code to explain your solution (1 mark).
+
+\textbf{Once you have completed these questions, you must place all the code you have produced into a folder, name this folder `Exercise2', compress it (to one of a .zip, .rar or .tar.gz file) and submit it to KEATS. Please note that you should only submit plain text files with a .java extension for assessment (so no proprietary formats such as PDF or Rich Text).}
+
+\end{document}  
